@@ -54,9 +54,6 @@
             </ul>
         </div>
 
-        <img src="./Assets/Foto de perfil.jpeg"
-            alt="Foto de perfil do Iago Oliveira, desenvolvedor desse portfólio pessoal." class="myApresentationImage">
-
     </section>
 
     <section class="section__container__aboutMe">
@@ -101,6 +98,34 @@
         </div>
     </section>
 
+    <section class="section__container__hobbies">
+        <h3 class="section__hobbies__title">hobbies</h3>
+        <div class="section__hobbies_limitatorBox">
+            <div class="section__hobbies--itens">
+                <img src="./Assets/skateboarding_black_24dp (1) 1.png" alt="Logo do HTML">
+                <p>Andar de Skate</p>
+            </div>
+            <div class="section__hobbies--itens">
+                <img src="./Assets/guitar.png" alt="Logo do CSS">
+                <p>Tocar Baixo</p>
+            </div>
+            <div class="section__hobbies--itens">
+                <img src="./Assets/Group.png" alt="Logo do JavaScript">
+                <p>Ouvir Música</p>
+            </div>
+            <div class="section__hobbies--itens">
+                <img src="./Assets/Vector.png" alt="Logo do Node">
+                <p>Cozinhar</p>
+            </div>
+            <div class="section__hobbies--itens">
+                <img src="./Assets/tv_black_24dp 1.png" alt="Logo do React">
+                <p>Assistir Série</p>
+            </div>
+        </div>
+    </section>
+
+    
+
     <section class="section__container__experience">
         <h1 class="section__experience__title">Experiencias</h1>
         <div class="section__experience__itens">
@@ -131,20 +156,24 @@
             <p class="footer__paragraph">Quer entrar em contato comigo?</p>
             <p class="footer__paragraph">Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</p>
             <form action="#"  class="footer__contactForm">
-                <input type="text" placeholder="Nome" name="name" class="footer__input">
-                <span for="name">Por favor, preencha o campo Nome</span>
-                <input type="email" placeholder="E-mail" name="email" class="footer__input">
+                <label for="name" class="name">Nome</label>
+                <input type="text" placeholder="Nome" id="name" class="footer__input">
+                <span for="name" >Por favor, preencha o campo Nome</span>
+                <label for="email" class="email">Email</label>
+                <input type="email" placeholder="E-mail" id="email" class="footer__input">
                 <span for="name">Por favor, preencha o campo E-mail</span>
-                <input type="text" placeholder="Assunto" name="subject" class="footer__input">
+                <input type="text" placeholder="Assunto"  class="footer__input">
                 <span for="subject">Por favor, preencha o campo Assunto</span>
-                <textarea type="text" name="message" class="footer__textArea__message" rows="10" cols="50" maxlength="300"></textarea>
+                <textarea type="text" class="footer__textArea__message" rows="10" cols="50" maxlength="300" placeholder="Mensagem"></textarea>
                 <span for ="message">Por favor, preencha o campo Mensagem</span>
 
                 <button type="submit" class="footer__contactForm__button"> Enviar mensagem</button>
             </form>
         </div>
     </footer>
-    <!-- <a target="_blank" href="https://icons8.com/icon/21278/css3">css</a> ícone por <a target="_blank" href="https://icons8.com">Icons8</a> -->
+    <a target="_blank" href="https://icons8.com/icon/21278/css3" class="refLegal">css ícone por</a>  <a target="_blank" href="https://icons8.com" class="refLegal">Icons8</a>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

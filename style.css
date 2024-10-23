@@ -85,7 +85,7 @@ body {
 /*=======================SECTION-APRESENTATION=======================*/
 .section__container__apresentation {
     font-weight: bold;
-    padding-block: 6.1rem;
+    padding-block: 16.1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -153,6 +153,7 @@ body {
     padding-inline: 15.2rem;
     text-align: center;
     margin-top: 7rem;
+    margin-bottom: 8rem;
 }
 
 .section__container__skills .section__skills__title {
@@ -185,6 +186,49 @@ body {
 }
 
 .section__skills_limitatorBox .section__skill--itens p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 0rem 0rem 1.6rem 1.6rem;
+
+}
+
+/*=======================SECTION-HOBBIES=======================*/
+.section__container__hobbies {
+    padding-inline: 15.2rem;
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.section__container__hobbies .section__hobbies__title {
+    font-size: 3.2rem;
+    font-weight: bold;
+    padding-bottom: 3.2rem;
+}
+
+.section__container__hobbies .section__hobbies_limitatorBox {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+
+}
+
+.section__container__hobbies .section__hobbies_limitatorBox .section__hobbies--itens {
+    background-color: var(--white);
+    width: 30.5rem;
+    height: 16.7rem;
+
+
+}
+
+.section__hobbies_limitatorBox .section__hobbies--itens img {
+    padding: 9.4rem 13.6rem 0.8rem 1.6rem;
+    height: 13.2rem;
+}
+
+.section__hobbies_limitatorBox .section__hobbies--itens p {
     font-size: 1.6rem;
     font-weight: bold;
     padding: 0rem 0rem 1.6rem 1.6rem;
@@ -295,16 +339,47 @@ body {
 
 .footer__contact .footer__contactForm {
     margin-top: 3.2rem;
+    position: relative;
 }
 
 .footer__contact .footer__contactForm .footer__input {
-    height: 4rem;
+    height: 5rem;
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--black);
     padding-left: 1rem;
     margin-bottom: 3.2rem;
     border: transparent;
+    box-shadow: 0px 2px var(--mediumGray);
+    font-family: "Raleway", sans-serif;
+}
+
+.footer__contact .footer__contactForm .footer__input:focus{
+    box-shadow: 0px 2px var(--blue);
+    outline: 0;
+}
+
+.footer__contact .footer__contactForm #name, #email{
+    padding-top: 1.5rem;
+}
+
+.footer__contact .footer__contactForm label{
+    color: var(--lightGray);
+    position: absolute;
+    margin-left: 1rem;
+   
+}
+
+.footer__contact .footer__contactForm label:first-child{
+    margin-top: 0.5rem;
+}
+
+.footer__contact .footer__contactForm label:last-of-type{
+    margin-top: 8.5rem;
+}
+
+.footer__contact .footer__contactForm .active {
+    color: var(--blue);
 }
 
 .footer__contact .footer__contactForm span {
@@ -323,8 +398,15 @@ body {
     padding-left: 1rem;
     margin-bottom: 3.2rem;
     resize: none;
-    padding-top: 0.5rem;
+    padding-top: 2rem;
     border: transparent;
+    box-shadow: 0px 2px var(--mediumGray);
+    font-family: "Raleway", sans-serif;
+}
+
+.footer__contact .footer__contactForm .footer__textArea__message:focus{
+    box-shadow: 0px 2px var(--blue);
+    outline: 0;
 }
 
 .footer__contact .footer__contactForm .footer__contactForm__button {
@@ -342,7 +424,14 @@ body {
     border: solid 1px var(--lightGray);
 }
 
-
+/*LEGAL*/
+.refLegal{
+    display: flex;
+    background-color: var(--lightblue);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -385,6 +474,11 @@ body {
 
     /*=======================SECTION-SKILLS=======================*/
     .section__container__skills {
+        padding-inline: 7rem;
+    }
+
+     /*=======================SECTION-HOBBIES=======================*/
+     .section__container__hobbies {
         padding-inline: 7rem;
     }
 
@@ -444,7 +538,6 @@ body {
             font-size: 1.4rem;
     }
     
-    
     .section__sociallinks .section__socialinks--links a {
             font-size: 1.2rem;
             color: #464646;
@@ -461,6 +554,11 @@ body {
 
     /*=======================SECTION-SKILLS=======================*/
     .section__container__skills {
+        padding-inline: 1.6rem;
+    }
+
+    /*=======================SECTION-SKILLS=======================*/
+    .section__container__hobbies {
         padding-inline: 1.6rem;
     }
 
